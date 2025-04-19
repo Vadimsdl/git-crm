@@ -1,0 +1,50 @@
+@import "../../styles/colors.scss";
+
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: $black;
+  opacity: 0;
+  pointer-events: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 999;
+  backdrop-filter: blur(5px);
+
+  &.show {
+    pointer-events: all;
+    transition: all 0.3s;
+    opacity: 1;
+  }
+
+  .modal {
+    padding: 16px;
+    width: 300px;
+    border-radius: 16px;
+    background-color: $background-secondary;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .close {
+      cursor: pointer;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

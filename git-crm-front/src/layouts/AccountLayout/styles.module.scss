@@ -1,0 +1,9 @@
+@import "../../styles/colors.scss";
+
+.container {
+  background: $background-primary;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}

@@ -1,0 +1,39 @@
+@import "../../styles/colors.scss";
+
+.form {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  background: $background-secondary;
+  padding: 24px;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+
+  .arrow {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    display: none;
+    cursor: pointer;
+
+    &.show {
+      display: flex;
+    }
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .actions {
+    display: flex;
+    margin-top: 16px;
+    gap: 16px;
+  }
+}

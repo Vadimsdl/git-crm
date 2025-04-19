@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+git-crm-front/build/
+git-crm-back/dist/
+
+# Docker
+.docker/
+
+# Logs
+logs/
+*.log
+backend_build.log
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Dependency lock files
+# Uncomment if you prefer not to include these in version control
+# package-lock.json
+# yarn.lock
+
+# MongoDB data
+mongodb_data/
+
+# Other
+.cache/
+temp/
+tmp/ 

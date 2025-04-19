@@ -1,0 +1,38 @@
+@import "../../../../styles/colors.scss";
+
+.card {
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background: $background-secondary;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .stars {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .owner > a {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px;
+  }
+}

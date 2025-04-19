@@ -1,0 +1,29 @@
+.container {
+  width: calc(100% - 48px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 24px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    padding: 16px;
+    gap: 16px;
+  }
+}
+
+.emptyState {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+
+  .title {
+    font-size: 24px;
+  }
+}

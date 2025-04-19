@@ -1,0 +1,59 @@
+@import "../../styles/colors.scss";
+
+.button {
+  border: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  min-width: 50px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.lg {
+    border-radius: 16px;
+    padding: 12px 24px;
+    font-size: 24px;
+  }
+  &.md {
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 19px;
+  }
+  &.sm {
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  &.full {
+    flex: 1;
+  }
+
+  &.danger {
+    background: $button-danger;
+    color: $text-primary;
+
+    &:hover {
+      background: $button-danger-hover;
+    }
+    &:active {
+      background: $button-danger-pressed;
+    }
+  }
+
+  &.primary {
+    background: $button-primary;
+    color: $text-primary;
+
+    &:hover {
+      background: $button-primary-hover;
+    }
+    &:active {
+      background: $button-primary-pressed;
+    }
+  }
+}
